@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href="https://webfontworld.github.io/pretendard/Pretendard.css" rel="stylesheet">
+	<style type="text/css">
+		body{margin: 0; background: url(back.png);}
+		.box{width: 70px; height: auto; position: absolute;}
+		div{color: white; font-size: 2rem;font-family: 'Pretendard'; font font-weight: 900;}
+
+
+		
+	</style>
+</head>
+<body>
+	<div id="dd"></div>
+	<audio src="bell.mp3" id="sound"></audio>
+	<script type="text/javascript">
+		makeBox1();
+		makeBox2();
+		makeBox3();
+		makeBox4();
+		makeBox5();
+		var d = 0;
+		dd.innerHTML = "네잎클로버를 찾아보세요 (" + d + "/5개)";
+		function makeBox1(){
+			var a1 = document.createElement("img");
+			a1.src = "image 49.png"
+			a1.id = "square";
+			a1.className = "box";
+			var b1 = Math.random() * (window.innerWidth - 200);
+			var c1 = Math.random() * (window.innerHeight - 200);
+			a1.style.left = b1 + "px";
+			a1.style.top = c1 + "px";
+			a1.onclick = function(){
+				a1.parentNode.removeChild(a1);
+				sound.play();
+				d = d+ 1;
+				dd.innerHTML = "네잎클로버를 찾아보세요 (" + d + "/5개)";
+			}
+			document.body.appendChild(a1);
+
+		}
+		function makeBox2(){
+			var a2 = document.createElement("img");
+			a2.src = "image 49.png"
+			a2.id = "square";
+			a2.className = "box";
+			var b2 = Math.random() * (window.innerWidth - 200);
+			var c2 = Math.random() * (window.innerHeight - 200);
+			a2.style.left = b2 + "px";
+			a2.style.top = c2 + "px";
+			a2.onclick = function(){
+				a2.parentNode.removeChild(a2);
+				sound.play();
+				d = d+ 1;
+				dd.innerHTML = "네잎클로버를 찾아보세요 (" + d + "/5개)";
+			}
+			document.body.appendChild(a2);
+
+		}
+		function makeBox3(){
+			var a3 = document.createElement("img");
+			a3.src = "image 49.png"
+			a3.id = "square";
+			a3.className = "box";
+			var b3 = Math.random() * (window.innerWidth - 200);
+			var c3 = Math.random() * (window.innerHeight - 200);
+			a3.style.left = b3 + "px";
+			a3.style.top = c3 + "px";
+			a3.onclick = function(){
+				a3.parentNode.removeChild(a3);
+				sound.play();
+				d = d+ 1;
+				dd.innerHTML = "네잎클로버를 찾아보세요 (" + d + "/5개)";
+			}
+			document.body.appendChild(a3);
+
+		}
+		function makeBox4(){
+			var a4 = document.createElement("img");
+			a4.src = "image 49.png"
+			a4.id = "square";
+			a4.className = "box";
+			var b4 = Math.random() * (window.innerWidth - 200);
+			var c4 = Math.random() * (window.innerHeight - 200);
+			a4.style.left = b4 + "px";
+			a4.style.top = c4 + "px";
+			a4.onclick = function(){
+				a4.parentNode.removeChild(a4);
+				sound.play();
+				d = d+ 1;
+				dd.innerHTML = "네잎클로버를 찾아보세요 (" + d + "/5개)";
+			}
+			document.body.appendChild(a4);
+
+		}
+		function makeBox5(){
+			var a5 = document.createElement("img");
+			a5.src = "image 49.png"
+			a5.id = "square";
+			a5.className = "box";
+			var b5 = Math.random() * (window.innerWidth - 200);
+			var c5 = Math.random() * (window.innerHeight - 200);
+			a5.style.left = b5 + "px";
+			a5.style.top = c5 + "px";
+			a5.onclick = function(){
+				a5.parentNode.removeChild(a5);
+				sound.play();
+				d = d+ 1;
+				dd.innerHTML = "네잎클로버를 찾아보세요 (" + d + "/5개)";
+			}
+			document.body.appendChild(a5);
+
+		}
+
+	</script>
+</body>
+</html>
